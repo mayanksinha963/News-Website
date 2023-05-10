@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" href="logo.png" type="immage/png">
+  <script src="https://kit.fontawesome.com/04ca3b1550.js" crossorigin="anonymous"></script>
+  <title>Informer</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-dark ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+          </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item active bg-dark" href="#">English</a>
+            <a class="dropdown-item text-white bg-dark" href="#">Hindi</a>
+            <div class="dropdown-divider"></div>
+          </div>
+          <hr class="top-hr">
+          <div class="vl"></div>
+
+        </li>
+        <li class="nav-item active  ">
+          <a class="nav-link text-white bg-dark " href="#">Local <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bg-dark" href="#">India</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bg-dark" href="#">International</a>
+          <hr class="top-hr">
+        </li>
+
+        <div class="vl2"></div>
+        <li class="nav-item">
+          <a class="nav-link text-white bg-dark" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bg-dark" href="#">Health</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bg-dark" href="#">Tech & Science</a>
+        </li>
+
+
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Live TV
+          </a>
+          <div class="dropdown-menu text-white bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-white bg-dark" href="https://www.aajtak.in/" target="_blank">Aaj Tak<img
+                src="index_logo/aajtak.png" width="25px" style="margin-left: 15px;"></a>
+            <a class="dropdown-item text-white bg-dark" href="https://www.ndtv.com/video/live/channel/ndtv24x7"
+              target="_blank">NDTV<img src="index_logo/NDTV_logo.png" width="25px" style="margin-left: 15px" ;></a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item text-white bg-dark" href="https://zeenews.india.com/live-tv" target="_blank">Zee
+              News<img src="index_logo/Zee_news.png" width="25px" style="margin-left: 15px;"></a>
+          </div>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</btn-danger>
+          <button class="btn btn-danger mx-2 " data-toggle="modal" data-target="#signupModal">Signup</btn-danger>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login to Informer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- SignupModal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Be an Informer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headline">
+    <div class="date">
+      <b>Friday, 27 January, 2023</b>
+    </div>
+
+    <div class="title">
+      <a href="index.html" style="color:black; text-decoration: none;" ><p class="informer">Informer</p></a>
+      <div class="subheadline">Information at your click</div>
+    </div>
+    <div class="weather" data-toggle="modal" data-target="#weatherModal">
+      <i class="fa-solid fa-cloud fa-fade" style="color: yellow;"></i>
+      <b>25<sup>0</sup>C</b>
+
+
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="weatherModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <!-- <span aria-hidden="true">&times;</span> -->
+          </button>
+        </div>
+        <div class="weather-content">
+          <div class="modal-body">
+            <div class="card">
+              <div class="weather-box">Today</div>
+              <div class="card-body">
+                <i class="fa-solid fa-moon"></i>
+                <div class="weather-box-content" style="font-size: 8px;"><b>25<sup>0</sup> C </b>12<sup>0</sup> C</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal-body">
+            <div class="card">
+              <div class="weather-box">Saturday</div>
+              <div class="card-body">
+                <i class="fa-solid fa-moon"></i>
+                <div class="weather-box-content" style="font-size: 8px;"><b>23<sup>0</sup> C </b>09<sup>0</sup> C</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="card">
+              <div class="weather-box">Sunday</div>
+              <div class="card-body">
+                <i class="fa-solid fa-moon"></i>
+                <div class="weather-box-content" style="font-size: 8px;"><b>24<sup>0</sup> C </b>12<sup>0</sup> C</div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <hr id="underheadline">
+  <hr id="underheadline2">
+
+
+  <div class="hot-news">
+    <div class="hot">Hot <span class="badge badge-danger">News</span></div>
+
+    <marquee>
+      <div class="hot-news-content">
+        <a href="https://www.ndtv.com/india-news/naba-kisore-das-cop-who-shot-odisha-health-minister-taken-into-custody-probe-on-5-facts-3733284"
+          target="_blank">Cop Who Shot Odisha Health Minister Naba Kisore Das Taken Into Custody, Probe On: 5 Facts</a>
+        <a href="https://indianexpress.com/article/technology/bharos-opportunities-challenges-india-developers-8410901//"
+          target="_blank" style="color: red;">Why BharOS has Indian developers excited and sceptical: ‘More choice is
+          good for consumers…
+          but it’s a long path’</a>
+        <a href="https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/vitamin-b12-deficiency-6-ways-your-body-tells-you-to-get-tested/photostory/97413522.cms"
+          target="_blank" style="color: red;">Vitamin B12 deficiency: 6 ways your body tells you to get tested</a>
+        <a href="https://www.space.com/mars-teddy-bear-face-hirise" target="_blank">NASA spies Martian rocks that look
+          just like a teddy bear</a>
+    </marquee>
+  </div>
+  </div>
+  <hr id="hot-news-underline">
+
+  <div class="breaking-news">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item active" id="breaking-news-image">
+          <img class="first-slide breaking-news-image"
+            src="https://images.hindustantimes.com/img/2023/01/27/550x309/The-two-terror-suspects-were-arrested-by-the-Delhi_1673684155036_1674838563347_1674838563347.jpg"
+            alt="First slide">
+          <div class="container">
+            <div class="carousel-caption breaking-news-content">
+              <h1>Car hits scooty, drags rider for<br> 350 meters in Delhi; 1 dead</h1>
+              <p>Updated on Jan 27, 2023 11:02 PM IST</p>
+              <p><a class="btn btn-lg btn-primary breaking-news-read-more" href="https://www.hindustantimes.com/"
+                  target="_blank" role="button">Read More...</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item" id="breaking-news-image">
+          <img class="second-slide breaking-news-image"
+            src="https://images.hindustantimes.com/img/2023/01/27/550x309/Modi_1674834244822_1674834266065_1674834266065.jpg"
+            alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption breaking-news-content">
+              <h1>PM's 'out of syllabus' response to students <br> about opposition, criticism</h1>
+              <p>Updated on Jan 27, 2023 09:16 PM IST</p>
+              <p><a class="btn btn-lg btn-primary breaking-news-read-more"
+                  href="https://www.hindustantimes.com/india-news/pms-out-of-syllabus-response-to-students-asking-about-opposition-criticism-101674833688611.html"
+                  target="_blank" role="button">Read More...</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" id="breaking-news-image">
+          <img class="third-slide breaking-news-image"
+            src="https://images.hindustantimes.com/img/2023/01/27/550x309/siddharth_1667549607679_1674834307953_1674834307953.jpg"
+            alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption breaking-news-content">
+              <h1>After Pathaan success, director Siddharth Anand <br>says ‘for me, numbers do matter'</h1>
+              <p>Updated on Jan 27, 2023 09:16 PM IST</p>
+              <p><a class="btn btn-lg btn-primary breaking-news-read-more"
+                  href="https://www.hindustantimes.com/entertainment/bollywood/after-pathaan-success-siddharth-anand-says-for-me-numbers-do-matter-101674832611152.html"
+                  target="_blank" role="button">Read More...</a></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev breaking-prev" href="#carouselExampleIndicators" role="button"
+          data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next breaking-next" href="#carouselExampleIndicators" role="button"
+          data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <div class="medium-content">
+    <div class="left">
+      <div class="top-stories">
+        <h1>Top Stories</h1>
+      </div>
+
+      <div class="left-content">
+        <div class="big-box">
+          <div class="big-news">
+            <img src="https://images.bhaskarassets.com/web2images/521/2023/01/29/comp-198-1_1674979970.gif" "
+            data-holder-rendered=" true" alt="News Thumbnail" class="img-fluid">
+            <div class="news-content">
+              <a href="https://www.bhaskar.com/national/news/odisha-health-minister-naba-das-sustained-injuries-after-being-shot-at-by-some-unidentified-miscreant-130855894.html"
+                target="_blank">
+                Deadly attack on Odisha's Health Minister:Nab Das was fired by the police officer, 4-5 bullets in the
+                chest; Airlifted
+              </a>
+            </div>
+            <div class="news-footer" style="text-decoration: none;">
+              45 minute ago
+            </div>
+          </div>
+        </div>
+        <div class="small-box">
+          <div class="small-news">
+            <img src="https://www.republicworld.com/assets/images/r_footer_logo.svg" style="width: 10%;" alt="">
+            <div class="small-news-contnet">
+              <a href="https://www.youtube.com/watch?v=uHC-87MmECo" target="_blank"> Health Minister No More:
+                Condolences Pour In; CM Patnaik Says 'Naba Das Was A Great Asset'</a>
+            </div>
+          </div>
+
+          <div class="small-news">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/CNN-News18_logo.png" style="width: 10%;"
+              alt="">
+            <div class="small-news-contnet">
+              <a href="https://www.youtube.com/watch?v=Le2ugAyUMVU" target="_blank"> Odisha Health Minister Naba Das
+                Shot At In Jharsuguda District's Brajrajnagar Area | English News</a>
+            </div>
+          </div>
+
+
+
+          <div class="small-news">
+            <img
+              src="data:image/png;base64,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"
+              style="width: 10%;" alt="">
+            <div class="small-news-contnet">
+              <a href="https://economictimes.indiatimes.com/news/newsblogs/daily-news-live-updates-today-latest-updates-29-january-2023/liveblog/97409076.cms"
+                target="_blank"> Adani Group on Hindenburg allegations</a>
+            </div>
+          </div>
+
+
+          <div class="small-news" style="margin-top: 4px;">
+            <img src="https://seeklogo.com/images/I/india-today-logo-0218513CB5-seeklogo.com.png" style="width: 10%;"
+              alt="">
+            <div class="small-news-contnet">
+              <a href="https://www.youtube.com/watch?v=XHsI57x5GhM" target="_blank"> Opposition Parties May Have
+                Differences But Will Stand United Against RSS-BJP, Says Rahul Gandhi</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="local-news">
+
+
+        <h1>Local News</h1>
+        <div class="local-news-border">
+          <div class="local-news-content">
+            <div class="local-news-written">
+              <a href="https://timesofindia.indiatimes.com/city/lucknow/free-cataract-surgery-in-lucknows-lokbandhu-hospital/articleshow/97388924.cms"
+                target="_blank">Free cataract surgery in Lucknow's Lokbandhu hospital</a>
+            </div>
+
+            <div class="local-news-pic">
+              <img
+                src="https://static.toiimg.com/thumb/msid-97388951,imgsize-691507,width-400,resizemode-4/97388951.jpg"
+                class="img-fluid" alt="thumbnail" id="right-news-image">
+            </div>
+          </div>
+
+
+
+          <div class="local-news-content">
+            <div class="local-news-written">
+              <a href="https://www.knocksense.com/lucknow/sexologist-from-lucknow-dr-sankalp-jain-bags-indian-achievers-award"
+                target="_blank">Sexologist from Lucknow, Dr Sankalp Jain, bags Indian Achiever's Award</a>
+            </div>
+
+            <div class="local-news-pic">
+              <img
+                src="https://gumlet.assettype.com/knocksense%2F2023-01%2F02dec2d6-06a9-4bbe-a079-cac53cea8fca%2FIMG_20230118_WA0032.jpg?auto=format%2Ccompress&fit=max&format=webp&w=1536&dpr=1.3"
+                class="img-fluid" alt="thumbnail" id="right-news-image">
+            </div>
+          </div>
+
+          <div class="local-news-content">
+            <div class="local-news-written">
+              <a href="https://timesofindia.indiatimes.com/city/lucknow/foreign-liquor-beer-prices-set-to-rise-in-up-from-april-1/articleshow/97421307.cms"
+                target="_blank">Foreign liquor, beer prices set to rise in UP from April 1.</a>
+            </div>
+
+            <div class="local-news-pic">
+              <img
+                src="https://static.toiimg.com/thumb/msid-97421307,imgsize-1660902,width-400,resizemode-4/97421307.jpg"
+                class="img-fluid" alt="thumbnail" id="right-news-image">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav aria-label="...">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <span class="page-link text-danger">Previous</span>
+      </li>
+      <li class="page-item "><a class="page-link text-danger" href="#">1</a></li>
+      <li class="page-item active">
+        <span class="page-link bg-danger text-white ">
+          2
+          <span class="sr-only">(current)</span>
+        </span>
+      </li>
+      <li class="page-item"><a class="page-link text-danger" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link text-danger" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="own-news" style="background-color: white ;">
+    <div class="own-news-text">
+    <a href="our_articles.html" target="_blank" style="color: red;">OUR ARTICLES</a>
+    </div>
+  </div>
+  <div class="own-news">
+    <div class="own-news-text">
+    <a href="own_news.html" target="_blank" style="color: white;">Create Your Own News</a>
+    </div>
+  </div>
+
+  
+  <a href="#" class = "back-to-top"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Eo_circle_red_arrow-up.svg/1024px-Eo_circle_red_arrow-up.svg.png" alt=""></a>
+
+  
+<div class="footer bg-dark text-white">
+  <footer class="container py-5 ">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+          <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+          <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+          <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+          <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+          <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+        </svg>
+        <small class="d-block mb-3 text-muted">© 2023-2024</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Sources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">THE TIMES OF INDIA</a></li>
+          <li><a class="text-muted" href="#">Aaj Tak</a></li>
+          <li><a class="text-muted" href="#">NDTV</a></li>
+          <li><a class="text-muted" href="#">Republic India</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

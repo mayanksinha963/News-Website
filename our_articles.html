@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="logo.png" type="immage/png">
+    <script src="https://kit.fontawesome.com/04ca3b1550.js" crossorigin="anonymous"></script>
+    <title>Informer</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-dark ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item active bg-dark" href="#">English</a>
+                        <a class="dropdown-item text-white bg-dark" href="#">Hindi</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                    <hr class="top-hr">
+                    <div class="vl"></div>
+
+                </li>
+                <li class="nav-item active  ">
+                    <a class="nav-link text-white bg-dark " href="#">Local <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark" href="#">India</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark" href="#">International</a>
+                    <hr class="top-hr">
+                </li>
+
+                <div class="vl2"></div>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark" href="#">Health</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark" href="#">Tech & Science</a>
+                </li>
+
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Live TV
+                    </a>
+                    <div class="dropdown-menu text-white bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white bg-dark" href="https://www.aajtak.in/" target="_blank">Aaj
+                            Tak<img src="index_logo/aajtak.png" width="25px" style="margin-left: 15px;"></a>
+                        <a class="dropdown-item text-white bg-dark"
+                            href="https://www.ndtv.com/video/live/channel/ndtv24x7" target="_blank">NDTV<img
+                                src="index_logo/NDTV_logo.png" width="25px" style="margin-left: 15px" ;></a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <a class="dropdown-item text-white bg-dark" href="https://zeenews.india.com/live-tv"
+                            target="_blank">Zee
+                            News<img src="index_logo/Zee_news.png" width="25px" style="margin-left: 15px;"></a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</btn-danger>
+                    <button class="btn btn-danger mx-2 " data-toggle="modal"
+                        data-target="#signupModal">Signup</btn-danger>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Informer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- SignupModal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Be an Informer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="headline">
+    <div class="date">
+      <b>Friday, 27 January, 2023</b>
+    </div>
+
+    <div class="title">
+      <a href="index.html" style="color:black; text-decoration: none;" ><p class="informer">Informer</p></a>
+      <div class="subheadline">Information at your click</div>
+    </div>
+    <div class="weather" data-toggle="modal" data-target="#weatherModal">
+      <i class="fa-solid fa-cloud fa-fade" style="color: yellow;"></i>
+      <b>25<sup>0</sup>C</b>
+
+
+    </div>
+  </div>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="weatherModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                    </button>
+                </div>
+                <div class="weather-content">
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="weather-box">Today</div>
+                            <div class="card-body">
+                                <i class="fa-solid fa-moon"></i>
+                                <div class="weather-box-content" style="font-size: 8px;"><b>25<sup>0</sup> C
+                                    </b>12<sup>0</sup> C</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="weather-box">Saturday</div>
+                            <div class="card-body">
+                                <i class="fa-solid fa-moon"></i>
+                                <div class="weather-box-content" style="font-size: 8px;"><b>23<sup>0</sup> C
+                                    </b>09<sup>0</sup> C</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="weather-box">Sunday</div>
+                            <div class="card-body">
+                                <i class="fa-solid fa-moon"></i>
+                                <div class="weather-box-content" style="font-size: 8px;"><b>24<sup>0</sup> C
+                                    </b>12<sup>0</sup> C</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <hr id="underheadline">
+    <nav aria-label="breadcrumb">
+
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Informer</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Our Trusted Article</li>
+            </ol>
+        </nav>
+    </nav>
+    <div class="article-heading" id="foreign">
+        Foreign liquor, beer prices set to rise in UP from April 1
+    </div>
+    <div class="article-subheading">
+        PTI / Jan 29, 2023, 20:08 IST
+
+        <div class="share-icon">
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Ftoi.in%252FG2FSAb%252Fa23gk&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=How%20Oakridger%20Sai%20Saket%E2%80%99s%20EduGrow%20initiative%20is%20introducing%20experiential%20learning%20in%20government%20schools&via=timesofindia&url=http%3A%2F%2Ftoi.in%2FG2FSAb%2Fa24gk&original_referer=https%3A%2F%2Ftimesofindia.indiatimes.com%2Fspotlight%2Fhow-oakridger-sai-sakets-edugrow-initiative-is-introducing-experiential-learning-in-government-schools%2Farticleshow%2F97317518.cms"
+                target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2FshareArticle%2F%3Furl%3Dhttp%3A%2F%2Ftoi%2Ein%2FG2FSAb%2Fa26gk&trk=login_reg_redirect"
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <i class="fa-solid fa-message" data-toggle="modal" data-target="#messageModal">
+                <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade message" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="mmessageModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="messageModalLabel">MAIL THIS ARTICLE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Receipt Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Your Name">Your Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name">
+                    
+                  </div>
+                  
+
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+            </i>
+        </div>
+    </div>
+
+    <div class="article-mid">
+        <div class="article-left">
+            <div class="article-left-heading" style="text-align: center; ">
+                ARTICLES
+            </div>
+            <div class="article-left-content">
+                <div class="article-left-image">
+                    <img src="https://static.toiimg.com/thumb/msid-97421329,imgsize-1660902,width-400,resizemode-4/97421329.jpg"
+                        alt="">
+                </div>
+                <a href="">
+                    <div class="article-left-written">
+                        Foreign Liquor, beer prices set to rise in UP from April 1
+                    </div>
+                </a>
+            </div>
+            <br>
+
+            <div class="article-left-content">
+                <div class="article-left-image">
+                    <img src="https://static.toiimg.com/thumb/msid-97317502,imgsize-86742,width-400,resizemode-4/97317502.jpg"
+                        alt="">
+                </div>
+                <div class="article-left-written">
+                    How Oakridger Sai Saket’s EduGrow initiative is introducing
+                </div>
+            </div>
+            <br>
+            <div class="article-left-content">
+                <div class="article-left-image">
+                    <img src="https://static.toiimg.com/thumb/msid-97418428,imgsize-160563,width-400,resizemode-4/97418428.jpg"
+                        alt="">
+                </div>
+                <div class="article-left-written">
+                    AIX Connect Lucknow- Kolkata flight aborts take off after bird- hit
+                </div>
+            </div>
+            <br>
+            <div class="article-left-content">
+                <div class="article-left-image">
+                    <img src="https://static.toiimg.com/thumb/msid-97416817,imgsize-1668592,width-400,resizemode-4/97416817.jpg"
+                        alt="">
+                </div>
+                <div class="article-left-written">
+                    Shivpal Yadav made general secretary in ew Samajwadi Party..
+                </div>
+            </div>
+
+        </div>
+
+        <div class="article-big-box">
+            <div class="article-midle">
+                <img src="https://static.toiimg.com/thumb/msid-97421329,imgsize-1660902,width-400,resizemode-4/97421329.jpg"
+                    alt="" width="100%">
+                <div class="article-mid-content">
+                    The prices of foreign liquor and beer in Uttar Pradesh will increase by 10 per cent with the
+                    implementation of the new excise policy from April 1, an official statement said on Sunday. The
+                    new
+                    excise policy 2023-24 was cleared by Uttar Pradesh Cabinet on Saturday. According to the
+                    statement,
+                    an
+                    increment of 10 per cent has been made on licence fees of foreign liquor, beer, cannabis retail
+                    shops
+                    and model shops. The government has also increased the fee for running the canteen facility at
+                    model
+                    shops to Rs 3 lakh from the present Rs 2 lakh in the new excise policy.
+
+                    With the new policy, the government has also increased the licence fee and security for bonded
+                    warehouse
+                    licenses (BWFL-2A, 2B, 2C) of foreign liquor, beer and wine. The registration and renewal fees
+                    of
+                    the
+                    master warehouse have been increased too. “The increase in licence fee and that of running
+                    canteen
+                    facility along with warehouse licences will eventually lead to rise in liquor prices,” said
+                    Devesh
+                    Jaiswal of the UP Liquor Sellers’ Welfare Association. “It will be too early to comment on how
+                    much
+                    the
+                    prices will increase,” he added.
+                </div>
+            </div>
+
+            <div class="article-right" style="width:25%;">
+                <div class="trending-stories">
+                    TRENDING STORIES
+                </div>
+                <div class="mytab">
+                    <input type="radio" id="tabincity" name="mytabs" checked="checked">
+                    <label for="tabincity">In City</label>
+                    <div class="tab">
+
+                        <i class="fa-solid fa-book"></i><a
+                            href="https://timesofindia.indiatimes.com/city/lucknow/bsp-chief-mayawati-says-sp-and-bjp-collaborating-to-divide-people/articleshow/97450573.cms"
+                            target="_blank"> SP, BJP collaborating to divide people: BSP</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a
+                            href="https://timesofindia.indiatimes.com/city/bareilly/driver-of-truck-that-mowed-6-held-in-ups-lakhimpur/articleshow/97427464.cms"
+                            target="_blank"> Driver of truck that moved 6 held inn UP's Lakhimpur</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a
+                            href="https://timesofindia.indiatimes.com/city/lucknow/its-garbage-mound-at-shivri-plant-in-lucknow/articleshow/97428958.cms"
+                            target="_blank"> It's garbage mound at Shivpuri plant in Lucknow</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a
+                            href="ties-weather-pollution-covid-dengue-cases-fog-delhi-noida-gurugram-rain-odisha-minister-naba-kisore-das-death-30-january-2023/liveblog/97428875.cms"
+                            target="_blank"> Naba Kishore Live : ASI Gopal Kirshna Das dismissed</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a
+                            href="https://timesofindia.indiatimes.com/city/goa/goa-house-committee-will-discuss-mhadei-issue-on-february-8/articleshow/97457472.cms"
+                            target="_blank"> Goa House panel to discuss Mhadei onn Feb 8</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a
+                            href="https://timesofindia.indiatimes.com/city/goa/govt-to-set-up-nursery-in-goa-to-supply-chonak-seeds/articleshow/97424509.cms"
+                            target="_blank"> Only a few days left : Galaxy unpacked 2023 on Feb 1</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a
+                            href="https://timesofindia.indiatimes.com/spotlight/always-in-motion-movado-unveils-its-latest-india-campaign-with-sidharth-malhotra-as-brand-ambassador/articleshow/97438581.cms"
+                            target="_blank"> Checkout Movado's latest campaign!</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a
+                            href="https://timesofindia.indiatimes.com/spotlight/are-you-silently-suffering-from-dry-eyes-disease-eye-care-specialist-dr-nikhil-gokhale-explains-why-you-should-be-worried-/articleshow/97437716.cms"
+                            target="_blank"> How to manage dry eyes diseases</a>
+                    </div>
+
+                    <input type="radio" id="tabentirecity" name="mytabs">
+                    <label for="tabentirecity">Entire City</label>
+                    <div class="tab">
+                        <i class="fa-solid fa-book"></i><a href=""> Union Budget to test PM Modi's fiscal resolve ahead
+                            of 2024 Lok Sabha...</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a href=""> Adani Group loses 65 billion dollar; Hindenburg
+                            responds to charge</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a href=""> How history became the new opium of masses</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a href=""> Pakistan mosque blast live : At least 47 dead,
+                            scores injured</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a href=""> 'PNB has Rs 70 billion exposure to Adani Group;.</a>
+                        <br>
+                        <i class="fa-solid fa-book"></i><a href=""> Peshwar blast: Pakistan Taliban claims
+                            responsibility</a>
+                        <br>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    <hr id="underheadline">
+
+    <a href="index.html" ><img src="https://www.freepnglogos.com/uploads/button-png/file-redbutton-leftarrow-svg-wikimedia-commons-36.png" alt="" style="width: 2%; margin-left: 50%; margin-bottom: 2%;"></a>
+
+    <div class="footer bg-dark text-white">
+        <footer class="container py-5 ">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="d-block mb-2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                        <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                        <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                    </svg>
+                    <small class="d-block mb-3 text-muted">© 2023-2024</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Sources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">THE TIMES OF INDIA</a></li>
+                        <li><a class="text-muted" href="#">Aaj Tak</a></li>
+                        <li><a class="text-muted" href="#">NDTV</a></li>
+                        <li><a class="text-muted" href="#">Republic India</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
